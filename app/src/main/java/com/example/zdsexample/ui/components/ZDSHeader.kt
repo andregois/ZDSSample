@@ -18,7 +18,7 @@ fun ZDSHeader(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.Unspecified,
-    style: TextStyle = typography.bodyLarge,
+    style: TextStyle = typography.titleLarge,
     textAlign: TextAlign = TextAlign.Center
 ) {
     val textColor = color.takeOrElse {
@@ -42,7 +42,7 @@ fun HeaderPreview() {
         text = "Header component title",
         modifier = Modifier,
         color = Color.Black,
-        style = MaterialTheme.typography.bodyMedium,
+        style = MaterialTheme.typography.titleLarge,
         textAlign = TextAlign.Center
     )
 }
